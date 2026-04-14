@@ -8,7 +8,7 @@ export default function SektorSkemaPage() {
         title="Sektor & Skema Sertifikasi"
         description="Informasi sektor dan daftar skema sertifikasi yang tersedia pada LSP mitra."
       />
-      <section>
+      <section className="alt">
         <div className="container">
           <div className="sector-grid">
             {sectors.map((item) => (

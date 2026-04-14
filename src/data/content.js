@@ -198,19 +198,96 @@ export const testimonials = [
 
 export const resources = [
   {
-    title: "Panduan Sertifikasi Nasional 2026",
+    title: "Panduan Lengkap Sertifikasi Profesi 2026",
     type: "PDF",
-    description: "Dokumen resmi kebijakan sertifikasi dan standar kompetensi terbaru."
+    size: "2.4 MB",
+    description: "Panduan komprehensif proses sertifikasi dari pendaftaran hingga pengambilan sertifikat.",
+    color: "coral",
+    icon: "doc"
   },
   {
-    title: "Template Formulir Asesmen",
-    type: "DOCX",
-    description: "Template penilaian untuk membantu LSP mitra melakukan asesmen."
+    title: "Peraturan BNSP tentang LSP P3 Terbaru",
+    type: "Regulasi",
+    size: "1.1 MB",
+    description: "Regulasi dan kebijakan terkini dari Badan Nasional Sertifikasi Profesi Indonesia.",
+    color: "indigo",
+    icon: "note"
   },
   {
-    title: "Webinar: Inovasi Layanan LSP",
-    type: "VIDEO",
-    description: "Rekaman webinar strategi peningkatan kualitas layanan sertifikasi."
+    title: "Template Formulir Asesmen Kompetensi",
+    type: "Template",
+    size: "450 KB",
+    description: "Format standar untuk proses asesmen yang dapat digunakan asesor profesional.",
+    color: "mint",
+    icon: "puzzle"
+  },
+  {
+    title: "Standar Kompetensi Kerja Nasional (SKKNI)",
+    type: "PDF",
+    size: "8.7 MB",
+    description: "Dokumen SKKNI terbaru untuk berbagai sektor industri di Indonesia.",
+    color: "coral",
+    icon: "doc"
+  },
+  {
+    title: "Checklist Persiapan Ujian Sertifikasi",
+    type: "Template",
+    size: "120 KB",
+    description: "Checklist lengkap untuk mempersiapkan diri menghadapi ujian kompetensi.",
+    color: "mint",
+    icon: "puzzle"
+  },
+  {
+    title: "SOP Penyelenggaraan Sertifikasi LSP P3",
+    type: "Regulasi",
+    size: "3.2 MB",
+    description: "Standar operasional prosedur yang wajib dipatuhi setiap LSP Mitra WIRAPINDO.",
+    color: "indigo",
+    icon: "note"
+  },
+  {
+    title: "Whitepaper: Masa Depan Sertifikasi di Era AI",
+    type: "PDF",
+    size: "5.8 MB",
+    description: "Analisis mendalam tentang dampak AI dan otomasi terhadap dunia sertifikasi profesi.",
+    color: "coral",
+    icon: "doc"
+  },
+  {
+    title: "Template Portofolio Peserta Sertifikasi",
+    type: "Template",
+    size: "280 KB",
+    description: "Format standar portofolio untuk mengumpulkan bukti kompetensi peserta sertifikasi.",
+    color: "mint",
+    icon: "puzzle"
+  }
+];
+
+export const publicationFilters = [
+  { label: "Semua", value: "all" },
+  { label: "Panduan PDF", value: "pdf" },
+  { label: "Regulasi", value: "regulasi" },
+  { label: "Template", value: "template" }
+];
+
+export const webinars = [
+  {
+    title: "Webinar: Panduan Lengkap Sertifikasi IT 2026",
+    duration: "1 jam 24 menit · 2.400 penonton",
+    color: "navy",
+    icon: "play"
+  },
+  {
+    title: "Workshop: Teknik Asesmen Kompetensi Profesional",
+    duration: "2 jam 10 menit · 1.890 penonton",
+    color: "violet",
+    icon: "play"
+  },
+  {
+    title: "Seminar Nasional: Sertifikasi di Era Transformasi Digital",
+    duration: "3 jam 05 menit · 5.200 penonton",
+    color: "teal",
+    icon: "play"
   }
 ];
 

@@ -33,7 +33,7 @@ export default function LspMitraPage() {
         </div>
       </section>
 
-      <section className="alt">
+      <section>
         <div className="container">
           <div className="partner-head">
             <p className="section-kicker">Mitra Resmi</p>

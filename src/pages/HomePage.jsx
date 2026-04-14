@@ -18,10 +18,6 @@ export default function HomePage() {
               WIRAPINDO hadir sebagai asosiasi terpercaya yang menghubungkan Lembaga Sertifikasi Profesi dengan dunia
               industri untuk menciptakan tenaga kerja bersertifikat berkualitas tinggi.
             </p>
-            <div className="hero-search">
-              <input type="text" placeholder="Cari LSP, sektor, atau skema sertifikasi" />
-              <button type="button" className="btn-primary">Cari</button>
-            </div>
             <div className="hero-actions">
               <Link to="/lsp-mitra" className="btn-primary">Jelajahi LSP Mitra</Link>
               <Link to="/sektor-skema" className="btn-secondary">Lihat Skema Sertifikasi</Link>
@@ -77,7 +73,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="alt section-tight">
+      <section className="alt section-tight testimonial-section">
         <div className="container">
           <div className="section-head">
             <div>

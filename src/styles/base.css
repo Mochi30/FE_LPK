@@ -16,7 +16,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--navy);
   background: var(--white);
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: clamp(16px, 0.9vw + 13px, 19px);
 }
 a { color: inherit; }
-.container { width: min(1120px, 88%); margin: 0 auto; }
+.container { width: 75%; margin: 0 auto; padding: 0 24px; }
