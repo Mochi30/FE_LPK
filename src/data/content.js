@@ -5,14 +5,126 @@ export const heroStats = [
   { value: "15K+", label: "Peserta Tersertifikasi" }
 ];
 
-export const lspMembers = [
-  { name: "LSP Mitra Nusantara", sector: "Manufaktur", location: "Jakarta" },
-  { name: "LSP Profesional Digital", sector: "Teknologi Informasi", location: "Bandung" },
-  { name: "LSP Kesehatan Mandiri", sector: "Kesehatan", location: "Surabaya" },
-  { name: "LSP Hospitality Prima", sector: "Pariwisata", location: "Bali" },
-  { name: "LSP Logistik Bersama", sector: "Logistik", location: "Semarang" },
-  { name: "LSP Kreatif Indonesia", sector: "Ekonomi Kreatif", location: "Yogyakarta" }
+export const lspDirectory = [
+  {
+    slug: "lsp-teknologi-digital-nusantara",
+    name: "LSP Teknologi Digital Nusantara",
+    sector: "TI",
+    region: "Jakarta",
+    category: "Teknologi Informasi",
+    schemes: 18,
+    icon: "\uD83D\uDCBB",
+    description: "Spesialis sertifikasi pengembangan software, jaringan, dan keamanan siber untuk industri digital Indonesia.",
+    established: "2016",
+    certified: "4.200+",
+    status: "Aktif",
+    availableSchemes: ["Junior Web Developer", "Data Analyst", "Network Admin", "Cybersecurity Analyst"]
+  },
+  {
+    slug: "lsp-kesehatan-prima-indonesia",
+    name: "LSP Kesehatan Prima Indonesia",
+    sector: "Kesehatan",
+    region: "Surabaya",
+    category: "Kesehatan",
+    schemes: 12,
+    icon: "\uD83C\uDFE5",
+    description: "Lembaga sertifikasi tenaga kesehatan meliputi perawat, bidan, dan manajemen rumah sakit.",
+    established: "2017",
+    certified: "3.800+",
+    status: "Aktif",
+    availableSchemes: ["Perawat Klinis", "Bidan Terampil", "Teknisi Medis", "Manajer RS"]
+  },
+  {
+    slug: "lsp-manufaktur-unggul",
+    name: "LSP Manufaktur Unggul",
+    sector: "Manufaktur",
+    region: "Bekasi",
+    category: "Manufaktur",
+    schemes: 15,
+    icon: "\uD83C\uDFED",
+    description: "Mendorong kompetensi tenaga kerja industri manufaktur, teknik mesin, dan rekayasa proses produksi.",
+    established: "2015",
+    certified: "5.100+",
+    status: "Aktif",
+    availableSchemes: ["Operator Mesin CNC", "Quality Control", "Teknisi Elektrik", "Supervisor Produksi"]
+  },
+  {
+    slug: "lsp-keuangan-andal",
+    name: "LSP Keuangan Andal",
+    sector: "Keuangan",
+    region: "Jakarta",
+    category: "Keuangan & Perbankan",
+    schemes: 10,
+    icon: "\uD83D\uDCB0",
+    description: "Sertifikasi profesional di bidang perbankan, asuransi, pasar modal, dan perencanaan keuangan.",
+    established: "2018",
+    certified: "2.900+",
+    status: "Aktif",
+    availableSchemes: ["Analis Kredit", "Agen Asuransi", "Pialang Efek", "Perencana Keuangan"]
+  },
+  {
+    slug: "lsp-pariwisata-nusantara",
+    name: "LSP Pariwisata Nusantara",
+    sector: "Pariwisata",
+    region: "Yogyakarta",
+    category: "Pariwisata & Hospitality",
+    schemes: 14,
+    icon: "\uD83C\uDF34",
+    description: "Memajukan standar kompetensi industri pariwisata, hotel, restoran, dan event organizer Indonesia.",
+    established: "2016",
+    certified: "3.400+",
+    status: "Aktif",
+    availableSchemes: ["Front Office Hotel", "Pemandu Wisata", "Chef Profesional", "Event Manager"]
+  },
+  {
+    slug: "lsp-siber-nasional",
+    name: "LSP Siber Nasional",
+    sector: "TI",
+    region: "Bandung",
+    category: "Teknologi Informasi",
+    schemes: 8,
+    icon: "\uD83D\uDD12",
+    description: "Spesialis sertifikasi keamanan informasi dan siber untuk individu, korporasi, dan instansi pemerintah.",
+    established: "2019",
+    certified: "1.800+",
+    status: "Aktif",
+    availableSchemes: ["Ethical Hacker", "SOC Analyst", "Cloud Security", "CISO"]
+  },
+  {
+    slug: "lsp-konstruksi-indonesia",
+    name: "LSP Konstruksi Indonesia",
+    sector: "Konstruksi",
+    region: "Jakarta",
+    category: "Konstruksi",
+    schemes: 20,
+    icon: "\uD83C\uDFD7\uFE0F",
+    description: "Mendukung kompetensi tenaga konstruksi dari tukang, mandor, hingga manajer proyek bersertifikat.",
+    established: "2015",
+    certified: "6.200+",
+    status: "Aktif",
+    availableSchemes: ["Mandor Bangunan", "Drafter CAD", "Manajer Proyek", "K3 Konstruksi"]
+  },
+  {
+    slug: "lsp-energi-nusantara",
+    name: "LSP Energi Nusantara",
+    sector: "Energi",
+    region: "Balikpapan",
+    category: "Energi & Pertambangan",
+    schemes: 16,
+    icon: "\u26A1",
+    description: "Melayani sertifikasi sektor energi, minyak gas, pertambangan, dan energi terbarukan.",
+    established: "2017",
+    certified: "2.700+",
+    status: "Aktif",
+    availableSchemes: ["Teknisi PLTS", "Operator Pembangkit", "K3 Migas", "Inspektor Energi"]
+  }
 ];
+
+export const lspMembers = lspDirectory.map((item) => ({
+  name: item.name,
+  sector: item.category,
+  location: item.region
+}));
 
 export const lspSchemes = [
   {
