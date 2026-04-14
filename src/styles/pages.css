@@ -1127,7 +1127,7 @@
 
 .lsp-detail-card {
   position: relative;
-  max-width: 880px;
+  max-width: 680px;
   margin: 0 auto;
   background: #fff;
   border-radius: 30px;
@@ -1183,7 +1183,7 @@
 }
 
 .lsp-detail-head p {
-  max-width: 640px;
+  max-width: 440px;
   color: #8793ad;
   font-size: 17px;
   line-height: 1.75;
