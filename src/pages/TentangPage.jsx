@@ -42,7 +42,7 @@ export default function TentangPage() {
   return (
     <>
       <PageHero
-        title="Tentang WIRAPINDO"
+        title={<>Tentang <span className="accent-word">WIRAPINDO</span></>}
         description="Asosiasi LSP P3 yang berperan sebagai pusat informasi, kolaborasi, dan penguatan mutu sertifikasi."
       />
       <section className="alt">

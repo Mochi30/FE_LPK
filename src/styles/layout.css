@@ -18,6 +18,11 @@
   margin-bottom: 14px;
 }
 
+.page-hero h1 .accent-word,
+.hero h1 .accent-word {
+  color: var(--teal);
+}
+
 .hero p,
 .page-hero p {
   color: rgba(255, 255, 255, 0.8);
@@ -158,6 +163,12 @@ section { padding: clamp(56px, 6vw, 96px) 0; }
 }
 
 @media (max-width: 980px) {
+  .hero,
+  .page-hero {
+    min-height: auto;
+    padding: 120px 0 64px;
+  }
+
   .footer-shell {
     grid-template-columns: 1fr;
   }
@@ -168,12 +179,33 @@ section { padding: clamp(56px, 6vw, 96px) 0; }
 }
 
 @media (max-width: 760px) {
+  .hero,
+  .page-hero {
+    padding: 108px 0 48px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: clamp(32px, 9vw, 46px);
+    line-height: 1.12;
+  }
+
+  .hero p,
+  .page-hero p {
+    max-width: none;
+  }
+
   .footer-columns {
     grid-template-columns: 1fr;
   }
 
   .footer-bottom {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
   }
 }
 

@@ -5,7 +5,7 @@ export default function LspMitraPage() {
   return (
     <>
       <PageHero
-        title="Direktori LSP Mitra"
+        title={<>Direktori<span className="accent-word"> LSP Mitra</span></>}
         description="Daftar lengkap LSP mitra beserta sektor, skema, dan informasi kontak untuk memudahkan pencarian."
       />
       <section className="alt">

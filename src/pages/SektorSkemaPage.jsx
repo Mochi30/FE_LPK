@@ -5,7 +5,7 @@ export default function SektorSkemaPage() {
   return (
     <>
       <PageHero
-        title="Sektor & Skema Sertifikasi"
+        title={<>Sektor & <span className="accent-word">Skema Sertifikasi</span></>}
         description="Informasi sektor dan daftar skema sertifikasi yang tersedia pada LSP mitra."
       />
       <section className="alt">

@@ -5,7 +5,7 @@ export default function PublikasiPage() {
   return (
     <>
       <PageHero
-        title="Publikasi & Resource"
+        title={<>Publikasi & <span className="accent-word">Resource</span></>}
         description="Memberikan akses mudah ke dokumen, regulasi, dan referensi untuk mendukung layanan sertifikasi."
       />
       <section className="alt">

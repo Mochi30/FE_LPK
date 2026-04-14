@@ -5,7 +5,7 @@ export default function KontakPage() {
   return (
     <>
       <PageHero
-        title="Kontak & FAQ"
+        title={<>Kontak & <span className="accent-word">FAQ</span></>}
         description="Hubungi asosiasi untuk informasi keanggotaan, skema, dan kerjasama."
       />
       <section>

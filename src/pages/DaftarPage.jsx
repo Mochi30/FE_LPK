@@ -4,11 +4,11 @@ export default function DaftarPage() {
   return (
     <>
       <PageHero
-        title="Pendaftaran Sertifikasi"
+        title={<>Pendaftaran <span className="accent-word">Sertifikasi</span></>}
         description="Pilih LSP mitra dan skema sertifikasi, lalu lengkapi data dan dokumen yang dibutuhkan."
       />
-      <section className="alt">
-        <div className="container">
+      <section className="alt registration-section">
+        <div className="container registration-shell">
           <h2 className="section-title">Form Pendaftaran Sertifikasi</h2>
           <p className="section-desc">
             Form ini membantu peserta memilih LSP mitra, menentukan skema, dan mengunggah dokumen pendukung.

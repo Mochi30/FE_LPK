@@ -20,7 +20,7 @@ export default function BeritaEventPage() {
   return (
     <>
       <PageHero
-        title="Berita & Event"
+        title={<>Berita & <span className="accent-word">Event</span></>}
         description="Update kegiatan, seminar, dan agenda asosiasi LSP mitra."
       />
       <section className="alt">
