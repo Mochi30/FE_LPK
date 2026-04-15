@@ -73,7 +73,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="alt section-tight testimonial-section">
+      <section className="alt section-tight testimonial-section home-sectors-section">
         <div className="container">
           <div className="section-head">
             <div>
@@ -83,13 +83,15 @@ export default function HomePage() {
             </div>
             <Link to="/sektor-skema" className="btn-secondary">Jelajahi Semua Sektor</Link>
           </div>
-          <div className="sector-grid">
+          <div className="home-sector-grid">
             {sectors.map((item) => (
-              <article className="sector-card" key={item.name}>
-                <div className="sector-icon">{item.name.slice(0, 2)}</div>
+              <article className="home-sector-card" key={item.name}>
+                <div className="home-sector-orb"></div>
+                <div className="home-sector-icon">{item.icon}</div>
+                {item.badge ? <span className="home-sector-badge">{item.badge}</span> : null}
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
-                <span className="sector-tag">{item.schemes} skema</span>
+                <span className="home-sector-count">{item.schemes} skema</span>
               </article>
             ))}
           </div>
