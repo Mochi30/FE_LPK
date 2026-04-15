@@ -1,7 +1,12 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import PageHero from "../components/common/PageHero";
-import { lspSchemes, sectors } from "../data/content";
+import { sectors } from "../data/content";
 
 export default function SektorSkemaPage() {
+  const [activeSectorName, setActiveSectorName] = useState(sectors[0]?.name ?? "");
+  const activeSector = sectors.find((item) => item.name === activeSectorName) ?? sectors[0];
+
   return (
     <>
       <PageHero
@@ -10,57 +15,72 @@ export default function SektorSkemaPage() {
       />
       <section className="alt">
         <div className="container">
+          <div className="sector-hero-head">
+            <span className="sector-hero-kicker">Pilih Sektor</span>
+            <h2 className="sector-hero-title">
+              Klik Sektor untuk <span>Lihat Skema</span>
+            </h2>
+            <p className="section-desc">
+              Setiap sektor memiliki daftar skema sertifikasi dengan persyaratan dan informasi lengkap.
+            </p>
+          </div>
           <div className="sector-grid">
             {sectors.map((item) => (
-              <article className="sector-card" key={item.name}>
-                <div className="sector-icon">{item.name.slice(0, 2)}</div>
+              <button
+                type="button"
+                className={`sector-card ${activeSector?.name === item.name ? "active" : ""}`}
+                key={item.name}
+                onClick={() => setActiveSectorName(item.name)}
+              >
+                {item.badge ? <span className="sector-badge">{item.badge}</span> : null}
+                <div className="sector-icon">{item.icon}</div>
                 <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                <span className="sector-tag">{item.schemes} skema</span>
-              </article>
+                <span className="sector-count">{item.schemes} Skema Tersedia</span>
+              </button>
             ))}
           </div>
         </div>
       </section>
+
       <section>
         <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="section-kicker">Skema Sertifikasi</p>
-              <h2 className="section-title">Model Skema Profesional</h2>
-              <p className="section-desc">
-                Rekomendasi skema sertifikasi yang disusun berdasarkan kebutuhan kompetensi dan level KKNI.
-              </p>
+          <div className="sector-detail-panel">
+            <div className="sector-detail-head">
+              <div className="sector-detail-icon">{activeSector.icon}</div>
+              <div>
+                <h2 className="sector-detail-title">{activeSector.name}</h2>
+                <p className="sector-detail-desc">{activeSector.detailDescription}</p>
+              </div>
             </div>
-            <button type="button" className="btn-secondary">Lihat Semua Skema</button>
-          </div>
-          <div className="scheme-grid">
-            {lspSchemes.map((item) => (
-              <article className="scheme-card" key={item.title}>
-                <div className="scheme-head">
-                  <span className="scheme-code">{item.code}</span>
-                  <span className="scheme-level">{item.level}</span>
-                </div>
-                <h3>{item.title}</h3>
-                <div className="scheme-meta">
-                  <span>{item.units} unit kompetensi</span>
-                  <span>{item.days} hari</span>
-                </div>
-                <p>{item.description}</p>
-                <div className="scheme-scope">
-                  <span>Ruang Lingkup:</span>
-                  <ul>
-                    {item.scope.map((scope) => (
-                      <li key={scope}>{scope}</li>
-                    ))}
-                  </ul>
-                </div>
-                <button type="button" className="btn-primary">Daftar Uji Kompetensi</button>
-              </article>
-            ))}
+            <h3 className="sector-detail-subtitle">
+              Skema Sertifikasi ({activeSector.detailSchemes.length} ditampilkan)
+            </h3>
+
+            <div className="sector-scheme-grid">
+              {activeSector.detailSchemes.map((item) => (
+                <article className="sector-scheme-card" key={item.title}>
+                  <h4>{item.title}</h4>
+                  <div className="sector-scheme-meta">
+                    <span className="sector-pill blue">{item.kkni}</span>
+                    <span className="sector-pill green">{item.duration}</span>
+                    <span className="sector-pill orange">{item.price}</span>
+                  </div>
+                  <p>{item.summary}</p>
+                  <Link to="/pendaftaran-sertifikasi" className="sector-scheme-link">
+                    Daftar Skema Ini →
+                  </Link>
+                </article>
+              ))}
+            </div>
+
+            <div className="sector-detail-actions">
+              <Link to="/pendaftaran-sertifikasi" className="btn-primary">Daftar Sertifikasi</Link>
+              <button type="button" className="btn-secondary sector-outline-btn">Download Panduan PDF</button>
+            </div>
           </div>
         </div>
       </section>
+
       <section className="alt">
         <div className="container">
           <h2 className="section-title">Contoh Informasi Skema</h2>

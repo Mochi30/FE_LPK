@@ -239,33 +239,231 @@ export const trustedPartners = [
 export const sectors = [
   {
     name: "Teknologi Informasi",
-    schemes: 18,
-    description: "Skema terkait jaringan, pengembangan aplikasi, keamanan siber, dan data."
+    schemes: 34,
+    description: "Skema terkait jaringan, pengembangan aplikasi, keamanan siber, dan data.",
+    icon: "\uD83D\uDCBB",
+    badge: "Populer",
+    detailDescription: "Sertifikasi pengembangan software, jaringan, keamanan siber, cloud, dan transformasi digital.",
+    detailSchemes: [
+      {
+        title: "Junior Web Developer",
+        kkni: "KKNI 4",
+        duration: "3 Hari",
+        price: "Rp 850.000",
+        summary: "Sertifikasi pengembang web yang menguasai HTML, CSS, JavaScript dasar."
+      },
+      {
+        title: "Data Analyst",
+        kkni: "KKNI 5",
+        duration: "4 Hari",
+        price: "Rp 1.200.000",
+        summary: "Analisis data menggunakan Python, SQL, dan visualisasi data profesional."
+      },
+      {
+        title: "Network Admin",
+        kkni: "KKNI 5",
+        duration: "3 Hari",
+        price: "Rp 1.000.000",
+        summary: "Pengelolaan dan konfigurasi infrastruktur jaringan perusahaan."
+      },
+      {
+        title: "Cybersecurity Analyst",
+        kkni: "KKNI 6",
+        duration: "5 Hari",
+        price: "Rp 1.800.000",
+        summary: "Analisis ancaman siber dan penerapan sistem keamanan informasi."
+      }
+    ]
+  },
+  {
+    name: "Kesehatan",
+    schemes: 28,
+    description: "Skema pelayanan kesehatan, laboratorium, dan administrasi.",
+    icon: "\uD83C\uDFE5",
+    detailDescription: "Sertifikasi tenaga kesehatan: keperawatan, kebidanan, tenaga medis, dan manajemen fasilitas kesehatan.",
+    detailSchemes: [
+      {
+        title: "Perawat Klinis",
+        kkni: "KKNI 5",
+        duration: "4 Hari",
+        price: "Rp 900.000",
+        summary: "Asuhan keperawatan klinis di fasilitas pelayanan kesehatan."
+      },
+      {
+        title: "Bidan Terampil",
+        kkni: "KKNI 5",
+        duration: "4 Hari",
+        price: "Rp 950.000",
+        summary: "Pelayanan kebidanan komprehensif prenatal hingga postnatal."
+      },
+      {
+        title: "Manajer RS",
+        kkni: "KKNI 7",
+        duration: "5 Hari",
+        price: "Rp 2.200.000",
+        summary: "Manajemen operasional dan strategis rumah sakit."
+      }
+    ]
   },
   {
     name: "Manufaktur",
     schemes: 22,
-    description: "Sertifikasi operator, quality control, maintenance, hingga produksi."
+    description: "Sertifikasi operator, quality control, maintenance, hingga produksi.",
+    icon: "\uD83C\uDFED",
+    detailDescription: "Kompetensi tenaga kerja industri manufaktur, teknik mesin, kontrol kualitas, dan rekayasa proses.",
+    detailSchemes: [
+      {
+        title: "Operator CNC",
+        kkni: "KKNI 3",
+        duration: "2 Hari",
+        price: "Rp 650.000",
+        summary: "Pengoperasian dan pemrograman mesin CNC untuk produksi."
+      },
+      {
+        title: "Quality Control",
+        kkni: "KKNI 4",
+        duration: "3 Hari",
+        price: "Rp 800.000",
+        summary: "Inspeksi dan pengendalian kualitas produk manufaktur."
+      },
+      {
+        title: "Supervisor Produksi",
+        kkni: "KKNI 6",
+        duration: "4 Hari",
+        price: "Rp 1.400.000",
+        summary: "Pengelolaan lini produksi dan tim di lantai pabrik."
+      }
+    ]
   },
   {
-    name: "Kesehatan",
-    schemes: 12,
-    description: "Skema pelayanan kesehatan, laboratorium, dan administrasi."
+    name: "Keuangan & Perbankan",
+    schemes: 19,
+    description: "Skema perbankan, asuransi, pasar modal, dan perencanaan keuangan.",
+    icon: "\uD83D\uDCB0",
+    badge: "Baru",
+    detailDescription: "Profesional bidang perbankan, asuransi, pasar modal, akuntansi, dan perencanaan keuangan.",
+    detailSchemes: [
+      {
+        title: "Analis Kredit",
+        kkni: "KKNI 5",
+        duration: "3 Hari",
+        price: "Rp 1.100.000",
+        summary: "Analisis kelayakan kredit dan manajemen risiko kredit bank."
+      },
+      {
+        title: "Agen Asuransi",
+        kkni: "KKNI 4",
+        duration: "2 Hari",
+        price: "Rp 700.000",
+        summary: "Penjualan dan pelayanan produk asuransi jiwa dan umum."
+      }
+    ]
   },
   {
-    name: "Pariwisata",
-    schemes: 16,
-    description: "Perhotelan, perjalanan wisata, pemandu, dan layanan pelanggan."
+    name: "Pariwisata & Hospitality",
+    schemes: 25,
+    description: "Perhotelan, perjalanan wisata, pemandu, dan layanan pelanggan.",
+    icon: "\uD83C\uDF34",
+    detailDescription: "Standar kompetensi industri pariwisata, perhotelan, kuliner, dan penyelenggaraan event.",
+    detailSchemes: [
+      {
+        title: "Front Office Hotel",
+        kkni: "KKNI 4",
+        duration: "2 Hari",
+        price: "Rp 600.000",
+        summary: "Pelayanan tamu, reservasi, dan manajemen front office hotel."
+      },
+      {
+        title: "Pemandu Wisata",
+        kkni: "KKNI 4",
+        duration: "3 Hari",
+        price: "Rp 750.000",
+        summary: "Pemanduan wisatawan domestik dan mancanegara."
+      },
+      {
+        title: "Chef Profesional",
+        kkni: "KKNI 5",
+        duration: "3 Hari",
+        price: "Rp 1.000.000",
+        summary: "Pengolahan masakan dan manajemen dapur profesional."
+      }
+    ]
   },
   {
-    name: "Logistik",
-    schemes: 14,
-    description: "Manajemen gudang, distribusi, supply chain, dan ekspedisi."
+    name: "Konstruksi",
+    schemes: 31,
+    description: "Sertifikasi tenaga konstruksi dari teknisi lapangan hingga manajer proyek.",
+    icon: "\uD83C\uDFD7\uFE0F",
+    detailDescription: "Kompetensi tenaga konstruksi dari tukang terampil hingga manajer proyek infrastruktur.",
+    detailSchemes: [
+      {
+        title: "Mandor Bangunan",
+        kkni: "KKNI 4",
+        duration: "2 Hari",
+        price: "Rp 550.000",
+        summary: "Pengawasan pekerjaan konstruksi bangunan gedung."
+      },
+      {
+        title: "K3 Konstruksi",
+        kkni: "KKNI 5",
+        duration: "3 Hari",
+        price: "Rp 900.000",
+        summary: "Penerapan keselamatan dan kesehatan kerja di proyek konstruksi."
+      },
+      {
+        title: "Manajer Proyek",
+        kkni: "KKNI 7",
+        duration: "5 Hari",
+        price: "Rp 2.000.000",
+        summary: "Perencanaan dan pengendalian proyek konstruksi."
+      }
+    ]
   },
   {
-    name: "Ekonomi Kreatif",
-    schemes: 10,
-    description: "Desain, produksi konten, event, dan industri kreatif."
+    name: "Energi & Pertambangan",
+    schemes: 21,
+    description: "Skema sektor energi, migas, pembangkit, dan keselamatan kerja.",
+    icon: "\u26A1",
+    detailDescription: "Sertifikasi tenaga kerja sektor minyak gas, pertambangan, dan energi terbarukan.",
+    detailSchemes: [
+      {
+        title: "Teknisi PLTS",
+        kkni: "KKNI 4",
+        duration: "3 Hari",
+        price: "Rp 800.000",
+        summary: "Instalasi dan pemeliharaan sistem panel surya."
+      },
+      {
+        title: "K3 Migas",
+        kkni: "KKNI 5",
+        duration: "4 Hari",
+        price: "Rp 1.300.000",
+        summary: "Keselamatan kerja di industri minyak dan gas bumi."
+      }
+    ]
+  },
+  {
+    name: "Pertanian & Kelautan",
+    schemes: 17,
+    description: "Skema budidaya, pengolahan hasil, dan manajemen operasional agribisnis.",
+    icon: "\uD83C\uDF3D",
+    detailDescription: "Kompetensi tenaga kerja sektor pertanian, perikanan, peternakan, dan agroindustri.",
+    detailSchemes: [
+      {
+        title: "Penyuluh Pertanian",
+        kkni: "KKNI 5",
+        duration: "3 Hari",
+        price: "Rp 700.000",
+        summary: "Penyuluhan teknis dan pendampingan petani."
+      },
+      {
+        title: "Budidaya Ikan",
+        kkni: "KKNI 4",
+        duration: "2 Hari",
+        price: "Rp 550.000",
+        summary: "Teknik budidaya ikan air tawar dan laut secara intensif."
+      }
+    ]
   }
 ];
 
