@@ -143,8 +143,8 @@ export default function KontakPage() {
             <h2 className="faq-title">Pertanyaan <span>Umum</span></h2>
           </div>
           <div className="faq-grid">
-            {contactFaqs.map((item, index) => (
-              <details className="faq-card faq-accordion" key={item.question} open={index === 0}>
+            {contactFaqs.map((item) => (
+              <details className="faq-card faq-accordion" key={item.question}>
                 <summary>
                   <span>{item.question}</span>
                   <span className="faq-toggle">+</span>
